@@ -31,3 +31,9 @@ resource "google_storage_bucket" "sfm_marketing_upload" {
   location                    = "US"
   uniform_bucket_level_access = true
 }
+# SFM-102: SEP Actuals landing bucket
+resource "google_storage_bucket" "sfm_sep_actuals" {
+  name                        = "your-unique-sfm-sep-actuals-bucket"
+  location                    = "US"
+  uniform_bucket_level_access = true
+}
